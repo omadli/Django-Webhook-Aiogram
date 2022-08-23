@@ -5,3 +5,6 @@ __pycache__/
 
 # environments
 .env
+
+# sqlite baza
+db.sqlite3
