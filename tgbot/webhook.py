@@ -1,7 +1,7 @@
 import json
 from aiogram import types, Bot, Dispatcher
 from django.http import HttpRequest, HttpResponse
-from .bot.handlers import bot, dp
+from .bot.loader import bot, dp
 
 
 async def proceed_update(req: HttpRequest):
