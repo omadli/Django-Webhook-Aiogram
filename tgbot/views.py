@@ -3,7 +3,6 @@ from asgiref.sync import async_to_sync
 from .webhook import proceed_update
 from django.http import HttpResponse, HttpRequest
 from django.views.decorators.csrf import csrf_exempt
-# Create your views here.
 
 
 def home(request: HttpRequest):

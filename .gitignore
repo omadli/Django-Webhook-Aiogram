@@ -8,3 +8,5 @@ __pycache__/
 
 # sqlite baza
 *.sqlite3
+
+venv

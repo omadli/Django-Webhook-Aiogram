@@ -124,5 +124,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 # CSRF_COOKIE_SECURE = False
 # CSRF_COOKIE_HTTPONLY = False
