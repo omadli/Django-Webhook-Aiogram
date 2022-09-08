@@ -1,4 +1,5 @@
 import os
+import hashlib
 from pathlib import Path
 from environs import Env
 
@@ -16,7 +17,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 WEB_DOMAIN = env.str('WEB_DOMAIN')
 DEBUG = env.bool('DEBUG')
     
-WEBHOOK_PATH = 'tgbot/' + API_TOKEN
+WEBHOOK_PATH = 'tgbot/' + hashlib.md5(API_TOKEN.encode()).hexdigest()
 WEBHOOK_URL = f"{WEB_DOMAIN}/{WEBHOOK_PATH}"
 
 
